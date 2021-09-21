@@ -2,10 +2,12 @@ import React from 'react'
 import { useEffect , useState} from 'react'
 import HighchartsReact from 'highcharts-react-official'
 import Highcharts from 'highcharts';
+import moment from 'moment';
 
 
 const generateOptions =(data)=>{
-    const categories =[];
+    const categories =data.map(item=>moment(item.Date).format('DD/MM/YYYY'));
+    console.log({categories});
     return{
         chart: {
             height: 500,
