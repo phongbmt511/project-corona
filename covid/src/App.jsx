@@ -5,13 +5,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Home } from './Container/Home';
+
 import { About } from './Container/About';
 import { Dashboard } from './Container/Dashboard';
 import { Headers } from './Layout/Headers'
 import { Title } from './Layout/Title'
+import Home from './Container/Home';
 
-export const App = () => {
+function App() {
   return (
     <div>
       <Router>
@@ -32,3 +33,6 @@ export const App = () => {
     </div>
   )
 }
+
+export default App ;
+

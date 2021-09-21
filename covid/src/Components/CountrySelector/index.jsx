@@ -1,31 +1,28 @@
 import React from 'react'
-import { FormControl, InputLabel, NativeSelect } from '@material-ul/core';
-
-export const CountrySelector = ({value ,handleOnChange,countries}) => {
-    
+import {FormControl, NativeSelect ,InputLabel} from '@material-ui/core';
+export const CountrySelector = ({value , handleOnChange ,countries}) => {
     return (
         <FormControl>
-            <InputLabel htmlFor="country-selector" shrink >Quoc gia</InputLabel>
+            <InputLabel htmlFor="country-selecter" shrink >Quoc gia</InputLabel>
             <NativeSelect
-                value={value}
-                onChange={handleOnChange}
-                inputProps={{
-                    name: 'country',
-                    id: 'country-selector'
-                }}
-                
+            value={value}
+            onChange={handleOnChange}
+            inputProps={{
+                name :'country',
+                id :'country-selecter',
+            }}
+
             >
                 {
                     countries.map((country)=>{
-                        return<Option value={country.ISO2.toLowerCase()}>{country.Country}</Option>
-
+                        return (
+                            <option value={country.ISO2.toLowerCase()}>
+                                {country.Country}
+                            </option>
+                        )
                     })
                 }
-
             </NativeSelect>
-            <FormHelperText>
-                Lua chon quoc gia
-            </FormHelperText>
         </FormControl>
     )
 }
