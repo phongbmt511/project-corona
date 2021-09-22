@@ -26,8 +26,8 @@ export const HightLight = ({ report }) => {
     return (
 
         <Grid container spacing={3}>
-            {sumary.map((data) => (
-                <Grid item sm={4} xs={12}>
+            {sumary.map((data, index) => (
+                <Grid item sm={4} xs={12} key={index}>
                     <HighLineCart
                         title={data.title}
                         count={data.count}
