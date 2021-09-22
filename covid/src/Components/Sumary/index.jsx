@@ -3,19 +3,20 @@ import { useEffect, useState } from 'react'
 import React from 'react'
 import { LineChart } from '../Charts/LineChart'
 import { HighMaps } from '../Charts/HighMaps'
+import { getMapDataByCountryId } from '../../API'
 
-export const Sumary = ({ report, selectedCountryId }) => {
+export const Sumary = ({ report, countryId }) => {
     const [mapData, setMapData] = useState({});
     
     useEffect(() => {
-        if(selectedCountryId){
-            import(
-                `@highcharts/map-collection/countries/${selectedCountryId}/${selectedCountryId}-all.geo.json`
-            ).then(res=> setMapData(res));
-            
+        if (countryId) {
+          getMapDataByCountryId(countryId)
+            .then((res) => {
+              setMapData(res);
+            })
+            .catch((err) => console.log({ err }));
         }
-        
-      }, [selectedCountryId]);
+      }, [countryId]);
     return (
         <Grid container spacing={3}>
             <Grid item sm={8} xs={12}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect , useState} from 'react'
-import { getCountries, getReportByCountry } from '../../API'
+import { getCountries, getReportByCountry  } from '../../API'
 import { CountrySelector } from '../../Components/CountrySelector'
 import { HightLight } from '../../Components/HightLight'
 import { Sumary } from '../../Components/Sumary'
@@ -39,7 +39,7 @@ const Home = () => {
         <div>
             <CountrySelector countries={countries} handleOnChange={handleOnChange} value={selectedCountryId}/>
             <HightLight report={report}/>
-            <Sumary report={report}/>
+            <Sumary report={report} countryId={selectedCountryId}/>
         </div>
     )
 }

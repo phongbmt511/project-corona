@@ -79,7 +79,7 @@ export const HighMaps = ({ mapData }) => {
     return (
         <HighchartsReact
             highcharts={Highchart}
-            option={cloneDeep(options)}
+            options={cloneDeep(options)}
             constructorType={'mapChart'}
             ref={chartRef}
         />
