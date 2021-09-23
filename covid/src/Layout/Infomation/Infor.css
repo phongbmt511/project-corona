@@ -1,0 +1,104 @@
+.Container_medican {
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(83, 173, 247);
+}
+
+.medican_top {
+    margin-top: 55px;
+    color: white;
+    text-align: center;
+}
+
+.medican_phone {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.medican_phone h1 {
+    color: rgb(0, 110, 255);
+}
+
+.medican_body {
+    width: 60%;
+    height: 80%;
+    border: solid;
+    margin: auto auto;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-color: wheat;
+}
+
+.medican_body_1 h3 {
+    color: violet;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.medican_slogen {
+    border-radius: 10px;
+    margin: auto auto;
+    width: 30%;
+    height: 10vh;
+    margin-top: 1rem;
+    background-color: chocolate;
+}
+
+.medican_text h2 {
+    color: black;
+    text-align: center;
+}
+
+.item1 {
+    border-radius: 4px;
+    margin: auto auto;
+    width: 40%;
+    height: 35vh;
+    margin-top: 2rem;
+    background-color: rgb(243, 127, 127);
+}
+
+.item2 {
+    border-radius: 4px;
+    margin: auto auto;
+    width: 40%;
+    height: 35vh;
+    margin-top: 2rem;
+    background-color: #90ee90;
+}
+
+.item3 {
+    background-color: rgb(160, 158, 158);
+    border-radius: 4px;
+    margin: auto auto;
+    width: 40%;
+    height: 35vh;
+    margin-top: 2rem;
+}
+
+.item4 {
+    background-color: rgb(241, 175, 241);
+    border-radius: 4px;
+    margin: auto auto;
+    width: 40%;
+    height: 35vh;
+    margin-top: 2rem;
+}
+
+.item5 {
+    background-color: rgb(166, 200, 245);
+    border-radius: 4px;
+    margin: auto auto;
+    width: 70%;
+    height: 35vh;
+    margin-top: 2rem;
+}
+
+.medican_footer h4 {
+    text-align: center;
+    color: violet;
+    height: 35vh;
+    margin-top: 2rem;
+}
