@@ -13,7 +13,7 @@ const generateOptions =(data)=>{
             height: 500,
           },
           title: {
-            text: 'Tổng ca nhiễm',
+            text: 'Total cases',
           },
           xAxis: {
             categories: categories,

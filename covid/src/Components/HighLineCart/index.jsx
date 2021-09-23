@@ -11,10 +11,12 @@ const useStyles =makeStyles({
     title :{
         fontSize :18,
         marginBottom: 5,
+        color:"#6a5d5d",
     },
     count :{
         fontWeight:'bold',
         fontSize:18,
+        color:"#90ee90",
     }
 });
 

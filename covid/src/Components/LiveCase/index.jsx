@@ -13,12 +13,13 @@ export const LiveCase = ({ getsummary }) => {
           
             {getsummary.map((item, index) => {
               getsummary.sort((a,b) => b.TotalConfirmed - a.TotalConfirmed);
-              const { Country, TotalConfirmed } = item;
+              const { Country, TotalConfirmed ,TotalDeaths} = item;
              
               return (
                 <tr key={index}>
                   <td>{Country}</td>
                   <td>{TotalConfirmed}</td>
+                  
                 </tr>
               );
 

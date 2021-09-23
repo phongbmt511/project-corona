@@ -2,8 +2,8 @@ import React from 'react'
 import {FormControl, NativeSelect ,InputLabel} from '@material-ui/core';
 export const CountrySelector = ({value , handleOnChange ,countries}) => {
     return (
-        <FormControl>
-            <InputLabel htmlFor="country-selecter" shrink >Quoc gia</InputLabel>
+        <FormControl style={{marginTop:"100px"}}>
+            <InputLabel htmlFor="country-selecter" shrink >Country</InputLabel>
             <NativeSelect
             value={value}
             onChange={handleOnChange}

@@ -1,31 +1,28 @@
-import { CardContent, Grid, Typography, Card } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React from 'react'
 import { HighLineCart } from '../HighLineCart';
-
-
-
 export const HightLight = ({ report }) => {
     const data = report && report.length ? report[report.length - 1] : [];
     const sumary = [
         {
-            title: 'So ca nhiem',
+            title: 'Total cases',
             count: data.Confirmed,
             type: 'confirmed'
         },
         {
-            title: 'Khoi',
+            title: 'Recovered cases',
             count: data.Recovered,
             type: 'recovered'
         },
         {
-            title: 'Tu vong',
+            title: 'Death cases',
             count: data.Deaths,
             type: 'deaths'
         },
     ]
     return (
 
-        <Grid container spacing={3}>
+        <Grid container spacing={3} style={{marginTop:"20px"}}>
             {sumary.map((data, index) => (
                 <Grid item sm={4} xs={12} key={index}>
                     <HighLineCart
