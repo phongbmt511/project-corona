@@ -8,8 +8,6 @@ import { Sumary } from '../../Components/Sumary'
 
 const Home = () => {
     const [countries, setCountries] = useState([]);
-    // const [summary, setSumary] = useState([]); bỏ
-    // Cái này là của thằng nào
     const [selectedCountryId, setSelectedCountryId] = useState('');
     const [report, setReport] = useState([]);
 

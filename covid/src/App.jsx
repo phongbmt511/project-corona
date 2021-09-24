@@ -5,11 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
 import { About } from './Container/About';
 import { Dashboard } from './Container/Dashboard';
 import { Headers } from './Layout/Headers'
-import { Title } from './Layout/Title'
 import Home from './Container/Home';
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
     <div>
       <Router>
         <Headers />
-        {/* <Title /> */}
         <Switch>
           <Route exact path="/" component={Home}>
             <Home />
