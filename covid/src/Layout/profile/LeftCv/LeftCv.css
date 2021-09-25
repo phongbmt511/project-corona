@@ -1,0 +1,10 @@
+.left_img img {
+    width: 100%;
+    position: absolute;
+}
+
+.left_text {
+    position: relative;
+    text-align: center;
+    margin-top: 3.5rem;
+}
